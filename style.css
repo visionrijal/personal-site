@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family: 'Anek Odia', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    scroll-behavior: smooth;
+  
+}
+button{
+    background-color: transparent;
+    border: none;
+    font-family: 'Anek Odia', sans-serif;
+
+}
+
+nav#navbar {
+    
+    font-size: 1.2rem;
+    padding: 0px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    min-height:12vh;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100vw;
+    /* Full width */
+    z-index: 100;
+    /* nav bar appears on top of everything */
+    transition: background-color 1s ease;
+    align-items: center;
+
+}
+
+.navbar-logo {
+    width: 30vh;
+    letter-spacing: 0.2rem;
+
+}
+
+
+
+.navbar-logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.nav-links {
+
+    display: flex;
+   
+
+}
+
+.nav-link {
+    cursor: pointer;
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:7px;
+
+}
+
+.nav-link:hover {
+
+    background-color: #D41212;
+    transition: all 0.6s linear;
+    transition-property: background-color;
+
+
+
+}
+.intro-bg{
+    overflow: hidden;
+    position: relative;
+    min-height: 125vh  ;
+    
+}
+.layer {
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    position: fixed;
+    z-index: -1;
+    min-height: 50rem;
+    
+    
+
+}
+
+.layer-bg {
+    background-image: url('images/ilu_bg.jpg');
+
+}
+
+.layer-1 {
+    background-image: url('images/ilu_01.png');
+    background-position: left bottom;
+}
+
+.layer-2 {
+    background-image: url('images/ilu_02.png');
+}
+
+.layer-3 {
+    background-image: url('images/ilu_03.png');
+    height: auto;
+}
+
+.layer-4 {
+    background-image: url('images/ilu_man.png');
+    background-position: right bottom;
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    background-color:#130D0A;
+   min-height: 100vh;
+    
+}
+.content div{
+    width: 80%;
+    text-align: center;
+}
+body::-webkit-scrollbar{
+    display:none;
+}
+.text{  
+    font-size: 8rem;
+    z-index: 1;
+    transition: transform 0.48s ease-in-out;
+}
+.name{
+     position:absolute;
+     top: 30vh;
+     left: 15vw;
+}
+.work{
+    font-size: 4rem;
+    position:absolute;
+    top:50vh;
+    left:15vw;
+}
+.lore{
+    font-size: 1.3rem;
+}
+.contact{
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(150px);
+    position: fixed;
+    top:40vh;
+    right: 2vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.6s ease;
+   
+}
+
+
+
