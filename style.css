@@ -92,6 +92,7 @@ nav#navbar {
 }
 .intro-mobile{
     background-image: url(images/fullimg.png);
+    background-position:center bottom;
     background-size:cover;
     display: none;
     height: 320px;
