@@ -199,12 +199,12 @@ body::-webkit-scrollbar{
     display: none;
 }
 .mobile-contact{
+    display: none;
     transform: translateX(200px);
     z-index: 1;
     position: fixed;
     top:10vh;
     right: 0;
-    display: flex;
     flex-direction: column;
     background-color: rgba(171, 75, 77, 0.7);
     width: 20vw;
@@ -217,6 +217,9 @@ body::-webkit-scrollbar{
 @media screen and (max-width:650px) {
     *{
         font-size: 1rem;
+    }
+    .mobile-contact{
+        display: flex;
     }
     .mobile-burger{
         display: block;
