@@ -32,8 +32,8 @@ function parallax(event) {
     var topDistance = scrollY;
     var depth, movement
     var layers = document.querySelectorAll("[data-type=parallax]")
-    myname.style.transform= translate3d = 'translate3d(' +scrollY*60 +'px ,'+scrollY+'px,0)'
-    work.style.transform=translate3d = 'translate3d(' + -scrollY*10 +'px ,'+scrollY+'px,0)'
+    myname.style.transform= translate3d = 'translate3d(' +scrollY*100 +'px ,'+scrollY+'px,0)'
+    work.style.transform=translate3d = 'translate3d(' + -scrollY*100 +'px ,'+scrollY+'px,0)'
 
     for (var i = 0; i < layers.length; i++) {
         depth = layers[i].getAttribute("data-depth")
@@ -43,5 +43,14 @@ function parallax(event) {
 
     }
 }
-
+let mobileContact= document.querySelector(".mobile-contact")
+let mobileBurger = document.querySelector('.mobile-burger')
+mobileBurger.addEventListener('click', function showNav(){
+    if( mobileContact.style.transform !='translateX(0px)'){
+     mobileContact.style.transform='translateX(0px)'
+    }
+    else{
+     mobileContact.style.transform='translateX(200px)'
+    }
+ })
 
