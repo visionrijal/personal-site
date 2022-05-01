@@ -92,7 +92,7 @@ nav#navbar {
 }
 .intro-mobile{
     background-image: url(images/fullimg.png);
-    background-size:100% 100vh;
+    background-size:cover;
     display: none;
     height: 320px;
 }
@@ -208,7 +208,7 @@ body::-webkit-scrollbar{
     flex-direction: column;
     background-color: rgba(171, 75, 77, 0.7);
     width: 20vw;
-    height: 80vh;
+    height: 70vh;
     align-items: center;
     justify-content: space-around;
     transition: all 0.4s linear;
